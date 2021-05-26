@@ -41,5 +41,5 @@ Route::post('/add', 'App\Http\Controllers\AdminController@store')->middleware(['
 
 Route::get('/biens/suppression/{id}', 'App\Http\Controllers\AdminController@destroy')->middleware(['auth']);;
 
-Route::get('/bien/{bien}', 'App\Http\Controllers\HabiterController@showBien')->middleware(['auth']);;
+Route::get('/bien/{bien}', 'App\Http\Controllers\HabiterController@showBien');
 
